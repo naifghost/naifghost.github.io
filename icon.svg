@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="52%" r="55%">
+      <stop offset="0%" stop-color="#ff6f59" stop-opacity="0.34" />
+      <stop offset="100%" stop-color="#ff6f59" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="body" cx="38%" cy="32%" r="85%">
+      <stop offset="0%" stop-color="#ffa088" />
+      <stop offset="45%" stop-color="#ff6f59" />
+      <stop offset="100%" stop-color="#d3452f" />
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#63b47c" />
+      <stop offset="100%" stop-color="#3c8a5f" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="118" fill="#0e1b14" />
+  <circle cx="256" cy="280" r="225" fill="url(#glow)" />
+
+  <!-- ثمرة الطماطم -->
+  <ellipse cx="256" cy="290" rx="152" ry="134" fill="url(#body)" />
+  <ellipse cx="196" cy="222" rx="44" ry="26" fill="#ffffff" opacity="0.22" transform="rotate(-24 196 222)" />
+
+  <!-- أوراق التاج -->
+  <path
+    d="M256 158c-14-34-52-50-92-42 14 30 44 52 82 54-14 10-24 25-28 44 21 2 42-7 56-24 6 20 20 36 40 44 12-18 16-40 10-60 36-6 62-28 72-56-36-6-74 7-98 36-6-8-20-8-42 4z"
+    fill="url(#leaf)"
+    transform="translate(-6 -6)"
+  />
+  <path d="M262 168c-2-22 6-40 24-52" stroke="#3c8a5f" stroke-width="12" stroke-linecap="round" fill="none" />
+
+  <!-- وجه ساعة محفور -->
+  <g opacity="0.5">
+    <circle cx="256" cy="300" r="80" fill="none" stroke="#5e1a0e" stroke-width="7" />
+    <path d="M256 300V238" stroke="#4a150c" stroke-width="12" stroke-linecap="round" />
+    <path d="M256 300l42 26" stroke="#4a150c" stroke-width="12" stroke-linecap="round" />
+    <circle cx="256" cy="300" r="10" fill="#4a150c" />
+  </g>
+</svg>
